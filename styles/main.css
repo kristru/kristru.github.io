@@ -2,6 +2,10 @@ body {
   font-family: "Raleway",serif;
 }
 
+main {
+  max-width: 900px;
+}
+
 header {
   background: url(images/anastasia-taioglou-214774.jpg) center / cover;
   background: rgba (5, 0, 0, 0.7);
@@ -30,4 +34,12 @@ h1 {
   margin: 0 30%;
   color: #ffffff;
   letter-spacing: .5rem;
+}
+
+.project-description {
+  padding-left: 0;
+}
+
+.project img {
+  width: 100%;
 }
