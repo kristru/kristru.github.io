@@ -1,5 +1,6 @@
 body {
   font-family: "Raleway",serif;
+  padding-bottom: 5rem;
 }
 
 main {
@@ -25,13 +26,16 @@ h1 {
   font-family: 'Mr Dafoe';
 }
 
+.hero-content {
+  margin: auto;
+}
+
 .slogan {
   background: hsla(194, 100%, 25%, .7);
   font-weight: lighter;
   font-size: 1rem;
   text-transform: uppercase;
   padding: 5px 0;
-  margin: 0 30%;
   color: #ffffff;
   letter-spacing: .5rem;
 }
@@ -42,4 +46,18 @@ h1 {
 
 .project img {
   width: 100%;
+}
+
+footer.mdl-mini-footer {
+  bottom: 0;
+  padding: .5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
+}
+
+footer.mdl-mini-footer > ul {
+  margin: auto;
+  font-size: 2rem;
 }
