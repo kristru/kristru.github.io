@@ -1,0 +1,33 @@
+body {
+  font-family: "Raleway",serif;
+}
+
+header {
+  background: url(images/anastasia-taioglou-214774.jpg) center / cover;
+  background: rgba (5, 0, 0, 0.7);
+  height: 60vh;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  color: hsla(0, 0%, 100%, 1);
+  text-shadow: 2px 2px 5px #184453;
+  font-size: 8rem;
+
+}
+
+.cursive {
+  font-family: 'Mr Dafoe';
+}
+
+.slogan {
+  background: hsla(194, 100%, 25%, .7);
+  font-weight: lighter;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 5px 0;
+  margin: 0 30%;
+  color: #ffffff;
+  letter-spacing: .5rem;
+}
