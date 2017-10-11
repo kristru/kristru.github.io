@@ -11,15 +11,13 @@ header {
   background: url(images/anastasia-taioglou-214774.jpg) center / cover;
   background: rgba (5, 0, 0, 0.7);
   height: 60vh;
-  justify-content: center;
-  text-align: center;
+  position: relative;
 }
 
 h1 {
   color: hsla(0, 0%, 100%, 1);
   text-shadow: 2px 2px 5px #184453;
   font-size: 8rem;
-
 }
 
 .cursive {
@@ -27,7 +25,12 @@ h1 {
 }
 
 .hero-content {
-  margin: auto;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
 }
 
 .slogan {
@@ -35,9 +38,10 @@ h1 {
   font-weight: lighter;
   font-size: 1rem;
   text-transform: uppercase;
-  padding: 5px 0;
+  padding: 5px 15px;
   color: #ffffff;
-  letter-spacing: .5rem;
+  letter-spacing: .25rem;
+  margin: 0 15%;
 }
 
 .project-description {
@@ -62,8 +66,17 @@ footer.mdl-mini-footer > ul {
   font-size: 2rem;
 }
 
-@@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   header.mdl-layout__header {
     display: flex;
+  }
+}
+
+@media screen and (max-width:500px){
+  .trujillo{
+    display:none;
+  }
+  .slogan{
+    margin
   }
 }
