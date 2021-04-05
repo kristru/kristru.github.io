@@ -2,6 +2,13 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+h1 {
+  font-family: 'Gentium Book Basic', serif;
+  color: hsla(0, 0%, 100%, .1);
+  font-size: 15rem;
+  text-align: center;
+}
+
 main {
   max-width: 900px;
 }
@@ -15,6 +22,23 @@ header {
   width: 100%;
 }
 
+footer.mdl-mini-footer {
+  bottom: 0;
+  padding: .5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: #494E6B;
+}
+
+footer.mdl-mini-footer > ul {
+  margin: auto;
+  font-size: 2rem;
+}
+
+.wireframe-bg{
+  background-color: #c1c1c1;
+}
 .header-content{
   background: rgba(73,78,101,.7);
   margin:auto;
@@ -52,13 +76,6 @@ header {
   box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
-h1 {
-  font-family: 'Gentium Book Basic', serif;
-  color: hsla(0, 0%, 100%, .1);
-  font-size: 15rem;
-  text-align: center;
-}
-
 .project-description {
   padding-left: 0;
 }
@@ -67,20 +84,6 @@ h1 {
   width: 100%;
 }
 
-footer.mdl-mini-footer {
-  bottom: 0;
-  padding: .5rem;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-  background-color: #494E6B;
-}
-
-footer.mdl-mini-footer > ul {
-  margin: auto;
-  font-size: 2rem;
-
-}
 
 @media screen and (max-width: 1024px) {
   header.mdl-layout__header {
