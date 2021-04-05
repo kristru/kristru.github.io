@@ -1,74 +1,54 @@
-<!DOCTYPE html>
-<html class="mdl-js">
+<!doctype html>
+<html lang="en">
   <head>
-    <title>Portfolio | Krissa Trujillo</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--Material Design Lite Install-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700" rel="stylesheet">
-    <!--Font Awesome-->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <!--Custom Styles-->
-    <link rel="stylesheet" href="styles/main.css">
-  </head>
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <title>Hello, world!</title>
+  </head>
   <body>
-    <header class="mdl-layout__header mdl-layout--transparent">
-      <div class="header-content">
+    <header>
+      <div class="container-fluid header-content">
         <h1 class="back-text">{hello}</h1>
-        <p class="overlay">My name is Krissa Trujillo. I'm a web designer and aspiring developer. Welcome to my portfolio.</p>
+      </div>
+      <div class="overlay">
+        <p>My name is Krissa Trujillo. I'm a web designer and aspiring developer. Welcome to my portfolio.</p>
       </div>
     </header>
 
-    <main class="mdl-layout_content mdl-grid">
-
-      <div class="project featured-project mdl-grid mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-        <div class="mdl-cell mdl-cell--5-col mdl-cell--12-tablet">
-          <img src="http://lorempixel.com/350/260/abstract/placeholder-1" alt="project screenshot"/>
-        </div>
-        <div class="mdl-cell--7-col">
-          <h2 class="mdl-card__title-text">Featured Project</h2>
-          <p class="project-description mdl-card_supporting-text">Project description text</p>
+    <main class="container-fluid">
+        <div class="row">
+          <div class="col-md">
+            <h3>About me</h3>
+            <p>Quick snippet about myself,experience and skill set</p>
+          </div>
+          <div class="col-md">
+            <div class="bar cf" data-percent="85%">
+              <span class="label">Adobe Creative Suite</span>
+            </div>
+            <div class="bar cf" data-percent="90%">
+              <span class="label light">HTML/CSS</span>
+            </div>
+            <div class="bar cf" data-percent="80%">
+              <span class="label light">Javascript</span>
+            </div>
+            <div class="bar cf" data-percent="80%">
+              <span class="label light">WordPress</span>
+            </div>
       </div>
-      </div>
-
-      <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-        <div>
-          <img src="http://lorempixel.com/350/260/abstract/placeholder-1" alt="project screenshot"/>
-        </div>
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Featured Project</h2>
-          <p class="mdl-card__supporting-text">Project description text</p>
-        </div>
-      </div>
-
-      <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-        <div>
-          <img src="http://lorempixel.com/350/260/abstract/placeholder-1" alt="project screenshot"/>
-        </div>
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Featured Project</h2>
-          <p class="mdl-card__supporting-text">Project description text</p>
-        </div>
+      <div>
+        <p>email, web, branding, typography, video</p>
       </div>
 
-      <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-        <div>
-          <img src="http://lorempixel.com/350/260/abstract/placeholder-1" alt="project screenshot"/>
-        </div>
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Featured Project</h2>
-          <p class="mdl-card__supporting-text">Project description text</p>
-        </div>
-      </div>
 
     </main>
 
-    <footer class="mdl-mini-footer">
-      <ul class="mdl-mini-footer__link-list">
+    <!--<footer class="container-fluid">
+      <ul>
         <li>
           <a href="https://www.linkedin.com/in/krissatrujillo/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
         </li>
@@ -82,6 +62,17 @@
           <a href="mailto:krissafuentes@gmail.com"><i class="fa fa-envelope-square" aria-hidden="true"></i></a>
         </li>
       </ul>
-    </footer>
+    </footer>-->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
   </body>
 </html>
