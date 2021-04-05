@@ -35,7 +35,12 @@ footer.mdl-mini-footer > ul {
   margin: auto;
   font-size: 2rem;
 }
-
+.bar{
+  border: 1px solid #c1c1c1;
+  background-color: #f1f1f1;
+  padding: 3px 10px;
+  margin-bottom: 10px;
+}
 .wireframe-bg{
   background-color: #c1c1c1;
 }
@@ -84,6 +89,14 @@ footer.mdl-mini-footer > ul {
   width: 100%;
 }
 
+.nav-tabs {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.tab-content{
+  padding-top: 20px;
+}
 
 @media screen and (max-width: 1024px) {
   header.mdl-layout__header {

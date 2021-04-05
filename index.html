@@ -29,14 +29,7 @@
         </div>
       </div>
     </nav>
-    <!--<header>
-      <div class="container-fluid header-content">
-        <h1 class="back-text">{hello}</h1>
-      </div>
-      <div class="overlay">
-        <p>My name is Krissa Trujillo. I'm a web designer and aspiring developer. Welcome to my portfolio.</p>
-      </div>
-    </header>-->
+
     <div class="container my-2 py-3">
       <div class="row">
         <div class="col-md wireframe-bg">
@@ -52,7 +45,7 @@
     </div>
 
     <main class="container">
-      <div class="row">
+      <div class="row my-5 justify-content-between">
         <div class="col-md">
           <div class="bar cf" data-percent="85%">
             <span class="label">Adobe Creative Suite</span>
@@ -69,35 +62,114 @@
             <span class="label light">WordPress</span>
           </div>
         </div>
+      </div>
 
+      <div class="row gallery my-5">
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Email</button>
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Web</button>
+            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Branding</button>
+            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Typography</button>
+            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Video</button>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 774px;">
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+                    <div class="card">
+                      <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+
+                      <div class="card-body">
+                        <h5 class="card-title">Card title that wraps to a new line</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3317%; top: 0px;">
+                    <div class="card p-3">
+                      <figure class="p-3 mb-0">
+                        <blockquote class="blockquote">
+                          <p>A well-known quote, contained in a blockquote element.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mb-0 text-muted">
+                          Someone famous in <cite title="Source Title">Source Title</cite>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 66.6633%; top: 0px;">
+                    <div class="card">
+                      <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3317%; top: 201px;">
+                    <div class="card bg-primary text-white text-center p-3">
+                      <figure class="mb-0">
+                        <blockquote class="blockquote">
+                          <p>A well-known quote, contained in a blockquote element.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mb-0 text-white">
+                          Someone famous in <cite title="Source Title">Source Title</cite>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3317%; top: 370px;">
+                    <div class="card text-center">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has a regular title and short paragraph of text below it.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 66.6633%; top: 402px;">
+                    <div class="card">
+                      <svg class="bd-placeholder-img card-img" width="100%" height="260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Card image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Card image</text></svg>
+
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 410px;">
+                    <div class="card p-3 text-end">
+                      <figure class="mb-0">
+                        <blockquote class="blockquote">
+                          <p>A well-known quote, contained in a blockquote element.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mb-0 text-muted">
+                          Someone famous in <cite title="Source Title">Source Title</cite>
+                        </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3317%; top: 548px;">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+          <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">...</div>
+        </div>
+      </div>
     </main>
 
-    <!--<footer class="container-fluid">
-      <ul>
-        <li>
-          <a href="https://www.linkedin.com/in/krissatrujillo/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="https://github.com/kristru"><i class="fa fa-github-square" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/krissa.trujillo"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="mailto:krissafuentes@gmail.com"><i class="fa fa-envelope-square" aria-hidden="true"></i></a>
-        </li>
-      </ul>
-    </footer>-->
 
-    <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
-    -->
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
   </body>
 </html>
