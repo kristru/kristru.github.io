@@ -100,7 +100,10 @@ video{
 .tab-content{
   padding-top: 20px;
 }
-
+.progress{
+  margin:1em 0px;
+  height: 1.5rem;
+}
 .modal-footer{
   justify-content: space-between;
 }
