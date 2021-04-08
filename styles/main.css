@@ -35,6 +35,9 @@ footer.mdl-mini-footer > ul {
   margin: auto;
   font-size: 2rem;
 }
+video{
+  width:100%;
+}
 .bar{
   border: 1px solid #c1c1c1;
   background-color: #f1f1f1;
@@ -96,6 +99,10 @@ footer.mdl-mini-footer > ul {
 }
 .tab-content{
   padding-top: 20px;
+}
+
+.modal-footer{
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 1024px) {
