@@ -2,6 +2,7 @@ $(document).ready(function(){
   console.log('testing Jquery library')
 });
 
+
 $('#myModal').on('shown.bs.modal', function () {
   $('#myInput').trigger('focus')
 })
