@@ -1,88 +1,1000 @@
-<!DOCTYPE html>
-<html class="mdl-js">
+<!doctype html>
+<html lang="en">
   <head>
-    <title>Portfolio | Krissa Trujillo</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--Material Design Lite Install-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
-    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-    <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Mr+Dafoe|Raleway:400,600,800" rel="stylesheet">
-    <!--Font Awesome-->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <!--Custom Styles-->
-    <link rel="stylesheet" href="styles/main.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <title>Krissa Trujillo</title>
   </head>
-
   <body>
-
-    <header class="mdl-layout__header mdl-layout--transparent">
-      <div class="hero-content">
-        <h1 class="cursive">Krissa <span class="trujillo">Trujillo</span></h1>
-        <p class="slogan"> Designer & Aspiring Developer</p>
-      </div>
-    </header>
-
-    <main class="mdl-layout_content mdl-grid">
-
-      <div class="project featured-project mdl-grid mdl-cell--12-col mdl-cell--4-col-tablet mdl-card mdl-shadow--4dp">
-        <div class="mdl-cell mdl-cell--5-col mdl-cell--12-tablet">
-          <img src="http://lorempixel.com/350/260/abstract/placeholder-1" alt="project screenshot"/>
-        </div>
-        <div class="mdl-cell--7-col">
-          <h2 class="mdl-card__title-text">Featured Project</h2>
-          <p class="project-description mdl-card_supporting-text">Project description text</p>
-      </div>
-      </div>
-
-      <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-        <div>
-          <img src="http://lorempixel.com/350/260/abstract/placeholder-1" alt="project screenshot"/>
-        </div>
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Featured Project</h2>
-          <p class="mdl-card__supporting-text">Project description text</p>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="assets/logo.png" alt="" width="30" height="auto">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </div>
         </div>
       </div>
+    </nav>
+    <main class="container my-3">
+        <!-- Bio Section -->
+        <div class="row bio align-items-end">
+          <div class="col-md wireframe-bg">
+            <img src="..." class="img-fluid headshot" alt="headshot image will go here"/>
+          </div>
+          <div class="col-md">
+            <div class="row">
+              <h2>hello there!</h2>
+              <p>
+                A couple lines of content about myself. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              </p>
+            </div>
+            <div class="row skills justify-content-between">
+              <div class="col">
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Adobe Creative Suite 75%</div>                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">HTML/CSS</div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Javascript</div>
+                </div>
+                <div class="progress py-0 my-0">
+                  <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Wordpress</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-        <div>
-          <img src="http://lorempixel.com/350/260/abstract/placeholder-1" alt="project screenshot"/>
-        </div>
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Featured Project</h2>
-          <p class="mdl-card__supporting-text">Project description text</p>
-        </div>
-      </div>
+        <!-- Gallery Section -->
+        <div class="row gallery my-5">
+            <!-- begin tabs -->
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-email-tab" data-bs-toggle="tab" data-bs-target="#nav-email" type="button" role="tab" aria-controls="nav-email" aria-selected="true">Email</button>
+                <button class="nav-link" id="nav-web-tab" data-bs-toggle="tab" data-bs-target="#nav-web" type="button" role="tab" aria-controls="nav-web" aria-selected="false">Web</button>
+                <button class="nav-link" id="nav-branding-tab" data-bs-toggle="tab" data-bs-target="#nav-branding" type="button" role="tab" aria-controls="nav-branding" aria-selected="false">Branding</button>
+                <button class="nav-link" id="nav-typography-tab" data-bs-toggle="tab" data-bs-target="#nav-typography" type="button" role="tab" aria-controls="nav-typography" aria-selected="false">Typography</button>
+                <button class="nav-link" id="nav-video-tab" data-bs-toggle="tab" data-bs-target="#nav-video" type="button" role="tab" aria-controls="nav-video" aria-selected="false">Video</button>
+              </div>
+            </nav>
+            <!-- begin content -->
+            <div class="tab-content" id="nav-tabContent">
+              <!--email-->
+              <div class="tab-pane fade show active" id="nav-email" role="tabpanel" aria-labelledby="nav-email-tab">
+                <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 714px;">
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+                    <div class="card">
+                      <img class="w-100" src="assets/EO-email.png" data-toggle="modal" data-target="#EOemailModal" />
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="EOemailModal" tabindex="-1" role="dialog" aria-labelledby="EOmodalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="EOmodalLabel">Easter Owens</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div id="EOemailCarouselCaptions" class="carousel slide" data-bs-ride="carousel">
+                              <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#EOemailCarouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#EOemailCarouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              </div>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="assets/EO-email.png" class="d-block w-100" alt="...">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>External announcement</h5>
+                                    <p>Some representative placeholder content for the first slide.</p>
+                                  </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/EO_newsletter.png" class="d-block w-100" alt="...">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Internal Newsletter</h5>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#EOemailCarouselCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#EOemailCarouselCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3333%; top: 0px;">
+                    <div class="card">
+                      <img class="w-100" src="assets/HP-email.gif" data-toggle="modal" data-target="#HPemailModal" />
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="HPemailModal" tabindex="-1" role="dialog" aria-labelledby="HPmodalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="HPmodalLabel">Hyde Park Jewelers</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="model-description">
+                              <p>
+                                Email design and copy.
+                              </p>
+                            </div>
+                            <img class="w-100" src="assets/HP-email.gif" />
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 66.6667%; top: 0px;">
 
-      <div class="project mdl-cell mdl-card mdl-shadow--4dp">
-        <div>
-          <img src="http://lorempixel.com/350/260/abstract/placeholder-1" alt="project screenshot"/>
+                    <div class="card">
+                      <img class="w-100" src="assets/RA-email-temp.png" data-toggle="modal" data-target="#RA-tempModal" />
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="RA-tempModal" tabindex="-1" role="dialog" aria-labelledby="RAtempModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="RAtempModalLabel">Richmond American</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="model-description">
+                              <p>
+                                Email template re-design and build. Check out the before and after:
+                              </p>
+                            </div>
+                            <div id="RAemailCarouselCaptions" class="carousel slide" data-bs-ride="carousel">
+                              <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#RAemailCarouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#RAemailCarouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              </div>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="assets/MDC-email-before.png" class="d-block w-100" alt="Before email">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Before</h5>
+                                  </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/RA-email-temp.png" class="d-block w-100" alt="After email">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>After</h5>
+                                  </div>
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#RAemailCarouselCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Before</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#RAemailCarouselCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">After</span>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 805.641px;">
+                    <div class="card p-2">
+                      <img class="w-100" src="assets/RA-event-email-temp.jpeg" data-toggle="modal" data-target="#RAeventEmailModal" />
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="RAeventEmailModal" tabindex="-1" role="dialog" aria-labelledby="RAeventModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="RAeventModalLabel">Richmond American</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="model-description">
+                              <p>
+                                Event email design and build.
+                              </p>
+                            </div>
+                            <img class="w-100" src="assets/RA-event-email-temp.jpeg" />
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <!--web-->
+              <div class="tab-pane fade" id="nav-web" role="tabpanel" aria-labelledby="nav-web-tab">
+                <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 714px;">
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+                    <div class="card">
+                      <img class="w-100" src="assets/CHR_web.png" data-toggle="modal" data-target="#CHRwebModal" />
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="CHRwebModal" tabindex="-1" role="dialog" aria-labelledby="CHRModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="CHRModalLabel">Colorado Home Realty</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="model-description">
+                              <p>
+                                Assisted with internal design pages and lead on Wordpress content integration. The following images are the specific pages designed by myself, based off of the home page direction.
+                              </p>
+                            </div>
+                            <div id="CHRwebCarouselCaptions" class="carousel slide" data-bs-ride="carousel">
+                              <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#CHRwebCarouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="CHR Slide 1"></button>
+                                <button type="button" data-bs-target="#CHRwebCarouselCaptions" data-bs-slide-to="1" aria-label="CHR Slide 2"></button>
+                                <button type="button" data-bs-target="#CHRwebCarouselCaptions" data-bs-slide-to="2" aria-label="CHR Slide 3"></button>
+                                <button type="button" data-bs-target="#CHRwebCarouselCaptions" data-bs-slide-to="3" aria-label="CHR Slide 4"></button>
+                              </div>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="assets/CHR_microHome.png" class="d-block w-100" alt="CHR Microsite Homepage">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Home page design</h5>
+                                  </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/CHR_blog-home.png" class="d-block w-100" alt="Blog Home Page">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Cpation on slide</h5>
+                                  </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/CHR_blog-post.png" class="d-block w-100" alt="Blog Post">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Cpation on slide</h5>
+                                  </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/CHR_subscribe.png" class="d-block w-100" alt="Blog Subscription">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Cpation on slide</h5>
+                                  </div>
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#CHRwebCarouselCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#CHRwebCarouselCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3333%; top: 0px;">
+                    <div class="card">
+                      <img class="w-100" src="assets/GL_web.jpeg" data-toggle="modal" data-target="#GLwebModal" />
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="GLwebModal" tabindex="-1" role="dialog" aria-labelledby="GLwebModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="GLwebModalLabel">Golden Lion</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            This has evolved from an outdated email, with PDF attachments of results, to a landing page.
+                            This page would take 3+ hours to create every month.
+                            It's now dynamically built using Javascript/JQuery, that reads CSV files and takes 5 minutes.
+                            Did I mention it's also mobile responsive?
+                            <img class="w-100" src="assets/GL_web.jpeg" />
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <a class="btn btn-primary" href="http://richmondamericanhomes.com/2021_specials/GoldenLion/_2021/2021_GoldenLion_Jan-Results.html" target="_blank" role="button">See it in action</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 66.6667%; top: 0px;">
+                    <div class="card">
+                      <img class="w-100" src="assets/SOA_web.png" data-toggle="modal" data-target="#SOAwebModal" />
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="SOAwebModal" tabindex="-1" role="dialog" aria-labelledby="SOAwebModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="SOAwebModalLabel">Colorado Home Realty</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="model-description">
+                              <p>
+                                High fidelity design mockup.
+                              </p>
+                            </div>
+                            <div id="SOAwebCarouselCaptions" class="carousel slide" data-bs-ride="carousel">
+                              <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#SOAwebCarouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="CHR Slide 1"></button>
+                                <button type="button" data-bs-target="#SOAwebCarouselCaptions" data-bs-slide-to="1" aria-label="CHR Slide 2"></button>
+                                <button type="button" data-bs-target="#SOAwebCarouselCaptions" data-bs-slide-to="2" aria-label="CHR Slide 3"></button>
+                                <button type="button" data-bs-target="#SOAwebCarouselCaptions" data-bs-slide-to="3" aria-label="CHR Slide 4"></button>
+                              </div>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="assets/SOA_web.png" class="d-block w-100" alt="Soapoint Homepage">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Home page design</h5>
+                                  </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/SOA_services.png" class="d-block w-100" alt="Soapoint Services">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Cpation on slide</h5>
+                                  </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/SOA_portfolio.png" class="d-block w-100" alt="Soapoint Portfolio">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Cpation on slide</h5>
+                                  </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/SOA_contact.png" class="d-block w-100" alt="Soapoint Contact">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Cpation on slide</h5>
+                                  </div>
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#SOAwebCarouselCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#SOAwebCarouselCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3333%; top: 779.969px;">
+                    <div class="card">
+                      <img class="w-100" src="assets/EO_web.png" data-toggle="modal" data-target="#EOwebModal" />
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="EOwebModal" tabindex="-1" role="dialog" aria-labelledby="EOwebModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="EOwebModalLabel">Easter-Owens</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="model-description">
+                              <p>
+                                Designed internal pages and was the lead in Wordpress content integration. In addition to the main website design
+                                I designed the pages for an online store for products that were not custom.
+                              </p>
+                            </div>
+                            <div id="EOwebCarouselCaptions" class="carousel slide" data-bs-ride="carousel">
+                              <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#EOwebCarouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="EO Slide 1"></button>
+                                <button type="button" data-bs-target="#EOwebCarouselCaptions" data-bs-slide-to="1" aria-label="EO Slide 2"></button>
+                                <button type="button" data-bs-target="#EOwebCarouselCaptions" data-bs-slide-to="2" aria-label="EO Slide 3"></button>
+                                <button type="button" data-bs-target="#EOwebCarouselCaptions" data-bs-slide-to="3" aria-label="EO Slide 4"></button>
+                                <button type="button" data-bs-target="#EOwebCarouselCaptions" data-bs-slide-to="4" aria-label="EO Slide 5"></button>
+                                <button type="button" data-bs-target="#EOwebCarouselCaptions" data-bs-slide-to="5" aria-label="EO Slide 6"></button>
+                                <button type="button" data-bs-target="#EOwebCarouselCaptions" data-bs-slide-to="6" aria-label="EO Slide 7"></button>
+                                <button type="button" data-bs-target="#EOwebCarouselCaptions" data-bs-slide-to="7" aria-label="EO Slide 8"></button>
+                              </div>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="assets/EO_web.png" class="d-block w-100" alt="...">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Home page design</h5>
+                                  </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/EO_team.png" class="d-block w-100" alt="...">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Cpation on slide</h5>
+                                  </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/EO_internal.png" class="d-block w-100" alt="...">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Cpation on slide</h5>
+                                  </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/EO_contact.png" class="d-block w-100" alt="...">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Cpation on slide</h5>
+                                  </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/EO_web-store.png" class="d-block w-100" alt="...">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Cpation on slide</h5>
+                                  </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/EO_product-qv.png" class="d-block w-100" alt="...">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Cpation on slide</h5>
+                                  </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/EO_product.png" class="d-block w-100" alt="...">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Cpation on slide</h5>
+                                  </div>
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#EOwebCarouselCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#EOwebCarouselCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 66.6667%; top: 1104.64px;">
+                    <div class="card">
+                      <img class="w-100" src="assets/PP_web.jpg" data-toggle="modal" data-target="#PPwebModal" />
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="PPwebModal" tabindex="-1" role="dialog" aria-labelledby="PPwebModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="PPwebModalLabel">Print Products</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            Landing page design and built via Hubspot.
+                            <img class="w-100" src="assets/PP_web.jpg" />
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 1378.08px;">
+                    <div class="card">
+                      <img class="w-100" src="assets/IT_web.jpeg" data-toggle="modal" data-target="#ITwebModal" />
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="ITwebModal" tabindex="-1" role="dialog" aria-labelledby="ITwebModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="ITwebModalLabel">Indian Tree Animal Hospital</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            A 'just for fun' design project of my veterinarian's website
+                            <img class="w-100" src="assets/IT_web.jpeg" />
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--branding-->
+              <div class="tab-pane fade" id="nav-branding" role="tabpanel" aria-labelledby="nav-branding-tab">
+                <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 714px;">
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+                    <div class="card">
+                      <img class="w-100" src="assets/IT_logo.jpeg" data-toggle="modal" data-target="#ITbrandModal" />
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="ITbrandModal" tabindex="-1" role="dialog" aria-labelledby="ITmodalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="ITmodalLabel">Indian Tree Animal Hospital</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div id="ITcarouselCaptions" class="carousel slide" data-bs-ride="carousel">
+                              <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#ITcarouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#ITcarouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              </div>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="assets/IT_branding.jpeg" class="d-block w-100" alt="...">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second slide label</h5>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                  </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/IT_web.jpeg" class="d-block w-100" alt="...">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#ITcarouselCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#ITcarouselCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3333%; top: 0px;">
+                    <div class="card">
+                      <img class="w-100" src="assets/EO_cards.png" data-toggle="modal" data-target="#EObrandModal" />
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="EObrandModal" tabindex="-1" role="dialog" aria-labelledby="EOmodalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="EOmodalLabel">Easter-Owens</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div id="EOcarouselCaptions" class="carousel slide" data-bs-ride="carousel">
+                              <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#EOcarouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#EOcarouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#EOcarouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#EOcarouselCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#EOcarouselCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#EOcarouselCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                              </div>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="assets/EO_cards.png" class="d-block w-100" alt="...">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second slide label</h5>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                  </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/EO_folder.png" class="d-block w-100" alt="...">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                  </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/EO_newsletter.png" class="d-block w-100" alt="...">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                  </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/EO-email.png" class="d-block w-100" alt="...">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                  </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/EO_web.png" class="d-block w-100" alt="...">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                  </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/EO_web-store.png" class="d-block w-100" alt="...">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#EOcarouselCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#EOcarouselCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 66.6667%; top: 0px;">
+                    <div class="card">
+                      <img class="w-100" src="assets/SC_logo.png" data-toggle="modal" data-target="#SCbrandModal" />
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="SCbrandModal" tabindex="-1" role="dialog" aria-labelledby="SCbrandModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="SCbrandModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <div id="SCcarouselCaptions" class="carousel slide" data-bs-ride="carousel">
+                              <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#SCcarouselCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#SCcarouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#SCcarouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              </div>
+                              <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                  <img src="assets/SC_logo-ba.png" class="d-block w-100" alt="...">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Second slide label</h5>
+                                    <p>Some representative placeholder content for the second slide.</p>
+                                  </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/SC_print-f.jpeg" class="d-block w-100" alt="...">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                  </div>
+                                </div>
+                                <div class="carousel-item">
+                                  <img src="assets/SC_print-b.jpeg" class="d-block w-100" alt="...">
+                                  <div class="carousel-caption d-none d-md-block">
+                                    <h5>Third slide label</h5>
+                                    <p>Some representative placeholder content for the third slide.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <button class="carousel-control-prev" type="button" data-bs-target="#SCcarouselCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#SCcarouselCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3333%; top: 235.203px;">
+                    <div class="card">
+                      <img class="w-100" src="assets/MM_logo.jpeg" data-toggle="modal" data-target="#MMbrandModal" />
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="MMbrandModal" tabindex="-1" role="dialog" aria-labelledby="MMbrandModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="MMbrandModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <img class="w-100" src="assets/MM_branding.png" data-toggle="modal" data-target="#MMbrandModal" />
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--typography-->
+              <div class="tab-pane fade" id="nav-typography" role="tabpanel" aria-labelledby="nav-branding-tab">
+                <div class="row text-center">
+                  <p>
+                    I've probably created hundreds of blog pins for Pinterest but these are a few of my favorites.
+                  </p>
+                </div>
+                <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 714px;">
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+                    <div class="card">
+                      <img class="w-100" src="assets/_pins/pin.jpg" />
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3333%; top: 0px;">
+                    <div class="card">
+                      <img class="w-100" src="assets/_pins/pin6.jpg" />
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 66.6667%; top: 0px;">
+                    <div class="card">
+                      <img class="w-100" src="assets/_pins/pin1.jpg" />
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 370.766px;">
+                    <div class="card">
+                      <img class="w-100" src="assets/_pins/pin2.jpg" />
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 66.6667%; top: 402.672px;">
+                    <div class="card">
+                      <img class="w-100" src="assets/_pins/pin3.jpg" />
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3333%; top: 566.625px;">
+                    <div class="card">
+                      <img class="w-100" src="assets/_pins/pin4.jpg" />
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 742.766px;">
+                    <div class="card">
+                      <img class="w-100" src="assets/_pins/pin5.jpg" />
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 66.6667%; top: 908.031px;">
+                    <div class="card">
+                      <img class="w-100" src="assets/_pins/pin7.jpg" />
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3333%; top: 1055.75px;">
+                    <div class="card">
+                      <img class="w-100" src="assets/_pins/pin8.jpg" />
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 1119.22px;">
+                    <div class="card">
+                      <img class="w-100" src="assets/_pins/pin9.jpg" />
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 33.3333%; top: 1507.5px;">
+                    <div class="card">
+                      <img class="w-100" src="assets/_pins/pin10.jpg" />
+                    </div>
+                  </div>
+                  <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 66.6667%; top: 1523.31px;">
+                    <div class="card">
+                      <img class="w-100" src="assets/_pins/pin11.jpg" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--video-->
+              <div class="tab-pane fade" id="nav-video" role="tabpanel" aria-labelledby="nav-video-tab">
+                <div class="row">
+                  <div class="col-lg-4 col-md-12 mb-4">
+
+                    <!--Modal: Name-->
+                    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-sm" role="document">
+
+                        <!--Content-->
+                        <div class="modal-content">
+
+                          <!--Body-->
+                          <div class="modal-body mb-0 p-0">
+                            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                              <video class="embed-responsive-item" loop controls src="assets/_video/finishedBasement_v4.mp4"
+                                allowfullscreen></video>
+                            </div>
+                          </div>
+
+                          <div class="modal-footer justify-content-center">
+                            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                          </div>
+
+                        </div>
+                        <!--/.Content-->
+
+                      </div>
+                    </div>
+                    <!--Modal: Name-->
+
+                    <a><img class="img-fluid z-depth-1" src="assets/_video/finished-basement_thumb.jpg" alt="video"
+                        data-toggle="modal" data-target="#modal1"></a>
+
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+
+                    <!--Modal: Name-->
+                    <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-sm" role="document">
+
+                        <!--Content-->
+                        <div class="modal-content">
+
+                          <!--Body-->
+                          <div class="modal-body mb-0 p-0">
+
+                            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                              <video class="embed-responsive-item" loop controls src="assets/_video/SeasonsCommunities_v2.mp4"
+                                allowfullscreen></video>
+                            </div>
+
+                          </div>
+
+                          <!--Footer-->
+                          <div class="modal-footer justify-content-center">
+                            <span class="mr-4">Spread the word!</span>
+                            <a type="button" class="btn-floating btn-sm btn-fb"><i class="fab fa-facebook-f"></i></a>
+                            <!--Twitter-->
+                            <a type="button" class="btn-floating btn-sm btn-tw"><i class="fab fa-twitter"></i></a>
+                            <!--Google +-->
+                            <a type="button" class="btn-floating btn-sm btn-gplus"><i class="fab fa-google-plus-g"></i></a>
+                            <!--Linkedin-->
+                            <a type="button" class="btn-floating btn-sm btn-ins"><i class="fab fa-linkedin-in"></i></a>
+
+                            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+
+                          </div>
+
+                        </div>
+                        <!--/.Content-->
+
+                      </div>
+                    </div>
+                    <!--Modal: Name-->
+
+                    <a><img class="img-fluid z-depth-1 border" src="assets/_video/seasons_thumb.jpg" alt="video"
+                        data-toggle="modal" data-target="#modal6"></a>
+
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+
+                    <!--Modal: Name-->
+                    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-sm" role="document">
+
+                        <!--Content-->
+                        <div class="modal-content">
+
+                          <!--Body-->
+                          <div class="modal-body mb-0 p-0">
+
+                            <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                              <video class="embed-responsive-item" loop controls src="assets/_video/September_Campaign_v3.mp4"
+                                allowfullscreen></video>
+                            </div>
+
+                          </div>
+
+                          <!--Footer-->
+                          <div class="modal-footer justify-content-center">
+                            <span class="mr-4">Kinetic typography video for Instagram</span>
+                            <button type="button" class="btn btn-outline-primary btn-rounded btn-md ml-4" data-dismiss="modal">Close</button>
+                          </div>
+
+                        </div>
+                        <!--/.Content-->
+
+                      </div>
+                    </div>
+                    <!--Modal: Name-->
+
+                    <a><img class="img-fluid z-depth-1 border" src="assets/_video/kinetic-type_thumb.jpg" alt="video"
+                        data-toggle="modal" data-target="#modal4"></a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
-        <div class="mdl-card__title">
-          <h2 class="mdl-card__title-text">Featured Project</h2>
-          <p class="mdl-card__supporting-text">Project description text</p>
-        </div>
-      </div>
 
     </main>
 
-    <footer class="mdl-mini-footer">
-      <ul class="mdl-mini-footer__link-list">
-        <li>
-          <a href="https://www.linkedin.com/in/krissatrujillo/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="https://github.com/kristru"><i class="fa fa-github-square" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="https://www.facebook.com/krissa.trujillo"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-        </li>
-        <li>
-          <a href="mailto:krissafuentes@gmail.com"><i class="fa fa-envelope-square" aria-hidden="true"></i></a>
-        </li>
-      </ul>
-    </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
   </body>
 </html>

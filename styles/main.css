@@ -1,6 +1,12 @@
 body {
-  font-family: "Raleway",serif;
-  padding-bottom: 5rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-family: 'Gentium Book Basic', serif;
+  color: hsla(0, 0%, 100%, .1);
+  font-size: 15rem;
+  text-align: center;
 }
 
 main {
@@ -8,40 +14,75 @@ main {
 }
 
 header {
-  background: url(images/anastasia-taioglou-214774.jpg) center / cover;
-  background: rgba (5, 0, 0, 0.7);
-  height: 60vh;
+  background: url(images/jesus-kiteque-224069.jpg) bottom center / cover;
+  height: 70vh;
   position: relative;
+  border-bottom: 3px solid white;
+  box-sizing: border-box;
+  width: 100%;
 }
 
-h1 {
-  color: hsla(0, 0%, 100%, 1);
-  text-shadow: 2px 2px 5px #184453;
-  font-size: 8rem;
-}
-
-.cursive {
-  font-family: 'Mr Dafoe';
-}
-
-.hero-content {
-  text-align: center;
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: 0;
+footer.mdl-mini-footer {
   bottom: 0;
+  padding: .5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: #494E6B;
 }
 
-.slogan {
-  background: hsla(194, 100%, 25%, .7);
-  font-weight: lighter;
-  font-size: 1rem;
-  text-transform: uppercase;
-  padding: 5px 15px;
-  color: #ffffff;
-  letter-spacing: .25rem;
-  margin: 0 15%;
+footer.mdl-mini-footer > ul {
+  margin: auto;
+  font-size: 2rem;
+}
+video{
+  width:100%;
+}
+.bar{
+  border: 1px solid #c1c1c1;
+  background-color: #f1f1f1;
+  padding: 3px 10px;
+  margin-bottom: 10px;
+}
+.wireframe-bg{
+  background-color: #c1c1c1;
+  height: 500px;
+}
+.header-content{
+  background: rgba(73,78,101,.7);
+  margin:auto;
+  padding: 0;
+  width: 100%;
+  height: 69vh;
+  text-align: center;
+  position: relative;
+  box-sizing: border-box;
+}
+.overlay{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 60%;
+  margin: auto;
+  z-index: 100;
+  text-shadow: 2px 2px 2px #494E6B;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  box-sizing: border-box;
+}
+.back-text{
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: auto;
+  z-index: 0;
+  color: hsla(0, 0%, 100%, .1);
+  font-size: 15em;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
 .project-description {
@@ -52,18 +93,20 @@ h1 {
   width: 100%;
 }
 
-footer.mdl-mini-footer {
-  bottom: 0;
-  padding: .5rem;
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-
+.nav-tabs {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
 }
-
-footer.mdl-mini-footer > ul {
-  margin: auto;
-  font-size: 2rem;
+.tab-content{
+  padding-top: 20px;
+}
+.progress{
+  margin:1em 0px;
+  height: 1.5rem;
+}
+.modal-footer{
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 1024px) {
@@ -72,11 +115,4 @@ footer.mdl-mini-footer > ul {
   }
 }
 
-@media screen and (max-width:500px){
-  .trujillo{
-    display:none;
-  }
-  .slogan{
-    margin
-  }
 }
