@@ -14,17 +14,21 @@
     <nav class="navbar navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="assets/logo.png" alt="" width="30" height="auto">
+          <img src="assets/logo.png" width="30" height="auto" class="d-inline-block align-top" alt="">
+          Krissa Trujillo
         </a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Pricing</a>
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <a class="nav-link" href="#nav-email">Email</a>
+            <a class="nav-link" href="#nav-web">Web</a>
+            <a class="nav-link" href="#nav-branding">Branding</a>
+            <a class="nav-link" href="#nav-typography">Typography</a>
+            <a class="nav-link" href="#nav-video">Video</a>
           </div>
         </div>
       </div>
@@ -39,18 +43,25 @@
             <div class="row">
               <h2>hello there!</h2>
               <p>
-                A couple lines of content about myself. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                Welcome to my portfolio. If you're here then you already know a little about me and my skill set. But here's a quick recap of the programs and languages I'm most familiar with and examples of it below. Including the porfolio itself! Which is built with Bootstrap 4. If you like what you see and want to know more let's set up an interview!
               </p>
             </div>
             <div class="row skills justify-content-between">
               <div class="col">
                 <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Adobe Creative Suite 75%</div>                </div>
-                <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">HTML/CSS</div>
+                  <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Adobe Creative Suite 75%</div>
                 </div>
                 <div class="progress">
-                  <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Javascript</div>
+                  <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Git</div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 35%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Javascript</div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">HTML/CSS</div>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Bootstrap</div>
                 </div>
                 <div class="progress py-0 my-0">
                   <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Wordpress</div>
@@ -65,11 +76,11 @@
             <!-- begin tabs -->
             <nav>
               <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                <button class="nav-link active" id="nav-email-tab" data-bs-toggle="tab" data-bs-target="#nav-email" type="button" role="tab" aria-controls="nav-email" aria-selected="true">Email</button>
-                <button class="nav-link" id="nav-web-tab" data-bs-toggle="tab" data-bs-target="#nav-web" type="button" role="tab" aria-controls="nav-web" aria-selected="false">Web</button>
-                <button class="nav-link" id="nav-branding-tab" data-bs-toggle="tab" data-bs-target="#nav-branding" type="button" role="tab" aria-controls="nav-branding" aria-selected="false">Branding</button>
-                <button class="nav-link" id="nav-typography-tab" data-bs-toggle="tab" data-bs-target="#nav-typography" type="button" role="tab" aria-controls="nav-typography" aria-selected="false">Typography</button>
-                <button class="nav-link" id="nav-video-tab" data-bs-toggle="tab" data-bs-target="#nav-video" type="button" role="tab" aria-controls="nav-video" aria-selected="false">Video</button>
+                <button class="nav-link active" id="nav-email-tab" data-bs-toggle="tab" href="#nav-email" data-bs-target="#nav-email" type="button" role="tab" aria-controls="nav-email" aria-selected="true">Email</button>
+                <button class="nav-link" id="nav-web-tab" data-bs-toggle="tab" href="#nav-web" data-bs-target="#nav-web" type="button" role="tab" aria-controls="nav-web" aria-selected="false">Web</button>
+                <button class="nav-link" id="nav-branding-tab" data-bs-toggle="tab" href="#nav-branding" data-bs-target="#nav-branding" type="button" role="tab" aria-controls="nav-branding" aria-selected="false">Branding</button>
+                <button class="nav-link" id="nav-typography-tab" data-bs-toggle="tab" href="#nav-typography" data-bs-target="#nav-typography" type="button" role="tab" aria-controls="nav-typography" aria-selected="false">Typography</button>
+                <button class="nav-link" id="nav-video-tab" data-bs-toggle="tab" href="#nav-video" data-bs-target="#nav-video" type="button" role="tab" aria-controls="nav-video" aria-selected="false">Video</button>
               </div>
             </nav>
             <!-- begin content -->
@@ -252,7 +263,7 @@
               </div>
               <!--web-->
               <div class="tab-pane fade" id="nav-web" role="tabpanel" aria-labelledby="nav-web-tab">
-                <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 714px;">
+                <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative;">
                   <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
                     <div class="card">
                       <img class="w-100" src="assets/CHR_web.png" data-toggle="modal" data-target="#CHRwebModal" />
@@ -987,7 +998,6 @@
               </div>
             </div>
         </div>
-
     </main>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
