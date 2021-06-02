@@ -4,9 +4,8 @@ body {
 
 h1 {
   font-family: 'Gentium Book Basic', serif;
-  color: hsla(0, 0%, 100%, .1);
-  font-size: 15rem;
-  text-align: center;
+  color: purple;
+  font-size: 2rem;
   font-family: 'Pattaya', sans-serif;
 }
 
