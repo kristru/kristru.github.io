@@ -4,8 +4,8 @@ body {
 
 h1 {
   font-family: 'Gentium Book Basic', serif;
-  color: purple;
-  font-size: 2rem;
+  color: #1db99a;
+  font-size: 3rem;
   font-family: 'Pattaya', sans-serif;
 }
 
@@ -38,6 +38,12 @@ footer.mdl-mini-footer > ul {
 video{
   width:100%;
 }
+button.close{
+  background: none;
+    border: none;
+    color: #1db99a;
+    font-size: 3rem;
+}
 .bar{
   border: 1px solid #c1c1c1;
   background-color: #f1f1f1;
@@ -45,9 +51,60 @@ video{
   margin-bottom: 10px;
 }
 
-.wireframe-bg{
-  background-color: #c1c1c1;
-  height: 500px;
+.carousel-caption{
+  position: initial!important;
+  color: #444!important;
+  margin-bottom: 30px;
+}
+
+.carousel-indicators .active {
+    opacity: 1!important;
+}
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 30px;
+    height: 5px!important;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #1db99a!important;
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .25;
+    transition: opacity .6s ease;
+}
+.modal-header{
+  height: 4rem;
+}
+.modal-title{
+  /*font-weight: bold;*/
+}
+.modal-footer>* {
+    margin: .25rem;
+}
+.btn-primary {
+    background-color: #1db99a!important;
+    border-color: #1db99a!important;
+}
+.card:hover{
+  transform: scale(1.025);
+}
+.porfolio-nav{
+margin-top:
+}
+.nav-link.active,
+.nav-item.show .nav-link {
+  color: #fff!important;
+  background-color: #1db99a!important;
+  border-color: ;
+}
+.progress-bar{
+  background-color: #67c4ac;
 }
 .header-content{
   background: rgba(73,78,101,.7);
