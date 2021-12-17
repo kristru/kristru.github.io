@@ -723,6 +723,7 @@ section {
 
 .portfolio-details .portfolio-details-slider img {
   width: 100%;
+  /* added the following*/
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination {
@@ -778,6 +779,9 @@ section {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
+/* added the following */
+
+/* end of custom */
 
 /*--------------------------------------------------------------
 # Services
