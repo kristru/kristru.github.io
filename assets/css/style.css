@@ -722,7 +722,7 @@ section {
 }
 
 .portfolio-details .portfolio-details-slider img {
-  width: 100%;
+  max-width: 100%;
   /* added the following*/
 }
 
@@ -779,7 +779,14 @@ section {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
+
 /* added the following */
+/*--------------------------------------------------------------
+Portfolio swiper Gallery
+--------------------------------------------------------------*/
+.swiper-wrapper{
+
+}
 
 /* end of custom */
 
