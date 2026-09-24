@@ -2,8 +2,8 @@ import reactLogo from '../assets/react.svg'
 
 function Home(){
     return(
-        <main>
-            <span><img src={reactLogo} /></span><span>Hello,</span><span>I'm Krissa</span>
+        <main className='home-container'>
+            <div className='intro'><span><img src={reactLogo} /></span><span>Hello,</span><span>I'm Krissa</span></div>
             <p>A strategic designer who bridges the gap between design and engineering.</p>
             <p>with just the right amount of gumption, I make digital experiences enjoyable.</p>
             

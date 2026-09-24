@@ -136,4 +136,26 @@
      --font-size-caption:0.75rem; /*12*/
      --font-size-footnote:0.625rem; /*10*/
 
+    
+     /* Padding Scale */
+    --p-xxsm: 2px;
+    --p-xsm: 4px;
+    --p-sm: 8px;
+    --p-md: 12px;
+    --p-lg: 16px;
+    --p-xl: 20px;
+    --p-xxl: 26px;
+    --p-huge: 32px;
+
+    /* Spacing */
+    --small: 4px;
+    --medium: 8px;
+    --large: 12px;
+
+    /* Radius */
+    --r-sm: var(--small);
+    --r-md: var(--medium);
+    --r-lg: var(--large);
+    --r-full: 999px;
+    
 }

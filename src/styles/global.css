@@ -6,3 +6,30 @@
   'GRAD' 0,
   'opsz' 24
 }
+
+/* Full Padding Styles*/
+.p-full-xxsm{
+    padding: var(--p-xxsm);
+}
+.p-full-xsm{
+    padding: var(--p-xsm);
+}
+.p-full-sm{
+    padding: var(--p-sm);
+}
+.p-full-md{
+    padding: var(--p-md);
+}
+.p-full-lg{
+    padding: var(--p-lg);
+}
+.p-full-xlg{
+    padding: var(--p-xlg);
+}
+.p-full-xxlg{
+    padding: var(--p-xxlg);
+}
+.p-full-huge{
+    padding: var(--p-huge);
+}
+

@@ -1,19 +1,21 @@
-import reactLogo from '../assets/react.svg'
+import '../styles/global.css'
+import './Header.css'
+import myLogo from '../assets/kt-logo.svg'
 
 function Header(){
     return(
         <header>
-            <nav>
+            <nav className="header">
                 <div>
-                    <img className="button-icon" src={reactLogo} alt="placeholder" />
+                    <img src={myLogo} alt="personal logo" width="30"/>
                 </div>
-                <div>
+                <div className="main-nav p-full-sm">
                     <a href="#about">About</a>
                     <a href="#work">Work</a>
                     <a href="#resume">Resume</a>
                 </div>
                 <div>
-                    <img className="button-icon" src={reactLogo} alt="placeholder" />
+                    <span className="material-symbols-outlined">mail</span>
                 </div>
             </nav>
         </header>
