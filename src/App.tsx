@@ -2,7 +2,8 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
-import Header from "./components/Header";
+import Header from './components/Header'
+import Home from './pages/Home'
 import './App.css'
 
 function App() {
@@ -12,9 +13,7 @@ function App() {
     <>
     <Header />
     <main>
-      <section>
-        <p>Placeholder Copy for New portfolio page</p>
-      </section>
+      <Home />
     </main>
       <section id="center">
         <div className="hero">
