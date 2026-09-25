@@ -136,6 +136,8 @@
      --font-size-caption:0.75rem; /*12*/
      --font-size-footnote:0.625rem; /*10*/
 
+     /* Line Heights */
+     --line-height-body: 1.5rem;
     
      /* Padding Scale */
     --p-xxsm: 2px;

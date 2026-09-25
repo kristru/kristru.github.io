@@ -21,18 +21,15 @@ header{
     justify-content: space-around;
     border: 1px solid var(--color-greyscl-30);
     max-width: 40%;
-    min-width: 40%;
     border-radius: var(--r-full);
+}
+    @media (max-width: 768px) {
+    .main-nav {
+    max-width: 60%;
+    }
 }
 
 .main-nav a{
     text-decoration: none;
-}
-
-.home-container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    color: var(--color-greyscl-100);
 }
