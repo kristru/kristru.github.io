@@ -9,11 +9,14 @@ function Header(){
                 <div>
                     <img src={myLogo} alt="personal logo" width="30"/>
                 </div>
-                <div className="main-nav p-full-sm">
+                <div className="main-nav-wrapper">
+                    <div className="main-nav">
                     <a href="#about">About</a>
                     <a href="#work">Work</a>
                     <a href="#resume">Resume</a>
+                    </div>
                 </div>
+                
                 <div>
                     <span className="material-symbols-outlined">mail</span>
                 </div>

@@ -3,9 +3,12 @@
 
 @import './tokens.css';
 
-
+html{
+  overflow-x: hidden;
+}
 body {
   margin: 0;
+  padding: 0;
   font-family: var(--font-family-primary);
 }
 
@@ -47,6 +50,33 @@ h1,h2,h3,h4,h5,h6,p{
     line-height: var(--line-height-body);
 }
 
+/* Typography == Display */
+.display-lg{
+    font-family: var(--font-family-display);
+    font-size: var(--font-size-display-lg);
+    text-transform: uppercase;
+    margin-top: 0;
+    line-height: var(--line-height-tight);
+}
+.display-reg{
+    font-family: var(--font-family-display);
+    font-size: var(--font-size-display);
+    text-transform: uppercase;
+    margin-top: 0;
+    line-height: var(--line-height-tight);
+}
+.display-sm{
+    font-family: var(--font-family-display);
+    font-size: var(--font-size-display-sm);
+    text-transform: uppercase;
+    margin-top: 0;
+    line-height: var(--line-height-tight);
+}
+
+/* Typography == Styles */
+.caps{
+    text-transform: uppercase;
+}
 /* Full Padding Styles*/
 .p-full-xxsm{
     padding: var(--p-xxsm);
@@ -73,3 +103,8 @@ h1,h2,h3,h4,h5,h6,p{
     padding: var(--p-huge);
 }
 
+/* Backgrounds */
+.dot-grid {
+  background-image: radial-gradient(circle, var(--color-greyscl-60) 1px, transparent 1px);
+  background-size: 20px 20px;
+}

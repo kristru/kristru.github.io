@@ -9,7 +9,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: 100%;
+    max-width: 100vw;
     padding-top:var(--p-sm);
     padding-left: var(--p-xxl);
     padding-right:var(--p-xxl);
@@ -18,10 +18,11 @@ header{
 .main-nav{
     display: flex;
     flex-grow: 1;
-    justify-content: space-around;
-    border: 1px solid var(--color-greyscl-30);
-    max-width: 40%;
+    justify-content: center;
+    border: 1px solid var(--color-greyscl-20);
+    max-width: 100%;
     border-radius: var(--r-full);
+    padding: 0;
 }
     @media (max-width: 768px) {
     .main-nav {
@@ -32,4 +33,17 @@ header{
 .main-nav a{
     text-decoration: none;
     color: var(--color-greyscl-100);
+    padding: var(--p-lg) var(--p-huge);
+    font-weight: var(--font-weight-semi-bold);
+}
+
+.main-nav a:hover{
+    background-color: var(--color-green-20);
+    border-radius: var(--r-full);
+}
+
+.main-nav a:focus{
+    background-color: var(--color-blue-100);
+    border-radius: var(--r-full);
+    color: var(--color-white);
 }

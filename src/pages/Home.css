@@ -1,5 +1,5 @@
 .home-container {
-    min-height: 90vh;
+    min-height: 90svh;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
